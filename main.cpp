@@ -1,4 +1,7 @@
-//
-// Created by diglett on 5/07/19.
-//
+/** Marc Garrido Casas   -   05/07/19 */
 
+#include <iostream>
+
+int main() {
+    std::cout << "Hello world" << std::endl;
+}
