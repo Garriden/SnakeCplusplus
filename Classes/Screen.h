@@ -1,6 +1,0 @@
-/** Marc Garrido Casas   -   05/07/19 */
-
-#ifndef SNAKECPLUSPLUS_SCREEN_H
-#define SNAKECPLUSPLUS_SCREEN_H
-
-#endif //SNAKECPLUSPLUS_SCREEN_H
