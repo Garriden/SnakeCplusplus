@@ -2,6 +2,24 @@
 
 #include "BackScreen.h"
 
+BackScreen::BackScreen()
+{
+    sizeX_ = DEFAULT_X_SIZE_;
+    sizeY_ = DEFAULT_Y_SIZE_;
+
+    std::vector<std::vector<char>> aux1(sizeX_, std::vector<char>(sizeY_));
+    std::vector<std::vector<bool>> aux2(sizeX_, std::vector<bool>(sizeY_));
+
+    for(int ii = 0; ii < sizeX_; ++ii) {
+        for(int jj = 0; jj < sizeY_; ++jj) {
+            aux1[ii][jj] = '.';
+            aux2[ii][jj] = true;
+        }
+    }
+    Matrix_ = aux1;
+    MatrixCorrectPosition_ = aux2;
+}
+
 BackScreen::BackScreen(int x, int y)
 {
     std::cout << "Constructing BackScreen" << std::endl;

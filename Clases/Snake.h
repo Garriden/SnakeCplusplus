@@ -5,13 +5,21 @@
 
 #include "Body.h"
 #include "BackScreen.h"
+#include "Position.h"
 
 class Snake : Body {
 private:
-    Body b_;
+    BackScreen Screen_;
+    Body body_;
+
+    Position head_;
+    Position tail_;
 
 public:
     Snake();
+
+    Position getHeadPosition();
+
 
 };
 

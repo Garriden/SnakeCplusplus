@@ -8,13 +8,16 @@
 
 class BackScreen {
 private:
+    const int DEFAULT_X_SIZE_ = 10;
+    const int DEFAULT_Y_SIZE_ = 10;
+
     int sizeX_;
     int sizeY_;
     std::vector<std::vector<char>> Matrix_;
     std::vector<std::vector<bool>> MatrixCorrectPosition_;
 
 public:
-
+    BackScreen();
     BackScreen(int sizeX, int sizeY);
 
     void setSizeX(int x);
